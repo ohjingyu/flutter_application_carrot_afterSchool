@@ -27,15 +27,27 @@ class MyApp extends StatelessWidget {
                 image:
                     const DecorationImage(image: AssetImage('images/피자.jpg'))),
           ),
+          const SizedBox(
+            width: 20,
+          ),
           Flexible(
             flex: 1,
             child: SizedBox(
+              height: 150,
               width: double.infinity,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('피자팝니다.'),
-                  const Text('성남시 중원구'),
+                  const Text('피자팝니다.',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                  const Divider(),
+                  const Text(
+                    '성남시 중원구',
+                    style: TextStyle(
+                        fontSize: 17, decoration: TextDecoration.underline),
+                  ),
                   const Text('10,000원'),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
