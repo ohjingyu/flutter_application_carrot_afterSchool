@@ -11,7 +11,12 @@ class DetailPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('detail'),
       ),
-      body: Text('$price'),
+      body: Column(
+        children: [
+          Hero(tag: 'image', child: Image.asset('images/피자.jpg')),
+          Text('$price'),
+        ],
+      ),
     );
   }
 }

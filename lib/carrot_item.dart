@@ -17,13 +17,17 @@ class CarrotItem extends StatelessWidget {
       mainAxisSize: MainAxisSize.max,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
+        Hero(
+          tag: 'image',
+          child : 
+           Container(
           width: 150,
           height: 150,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               image: const DecorationImage(image: AssetImage('images/피자.jpg'))),
         ),
+    ),
         const SizedBox(
           width: 20,
         ),
